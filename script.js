@@ -7,7 +7,18 @@ const inputDistance = document.querySelector('.form__input--distance');
 const inputDuration = document.querySelector('.form__input--duration');
 const inputCadence = document.querySelector('.form__input--cadence');
 const inputElevation = document.querySelector('.form__input--elevation');
+const sidebar = document.querySelector('.sidebar');
+const btnMenu = document.querySelector('.menu');
+const btnLine = document.querySelector('.btn__menu');
+const btnCheckbox = document.querySelector('.btn__check');
 
+// /////////////////////////////////////////////////////////////////////////////////
+
+// console.log(btn);
+
+// function revealSidebar() {
+// }
+// btnMenu.addEventListener('click', revealSidebar);
 // /////////////////////////////////////////////////////////////////////////////////
 class Workut {
   date = new Date();
@@ -109,6 +120,9 @@ class App {
 
   // FORM TOGGLE////////////////////////////////////////////////////
   _showForm(mapE) {
+    // ***************************************************************
+    btnCheckbox.checked = true;
+    // ***************************************************************
     this.#mEvent = mapE;
     form.style.display = 'grid';
     form.classList.remove('hidden');

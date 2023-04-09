@@ -27,9 +27,19 @@
     ></script>
 
     <script defer src="script.js"></script>
-    <title>mapty // Map your workouts</title>
+    <title>Simple Map App&mdash;Map your workouts</title>
   </head>
   <body>
+    <!-- MAP -->
+    <div id="map"></div>
+
+    <!-- MENU -->
+    <input type="checkbox" class="btn__check" name="checkbox" id="btn" />
+    <label for="btn" class="menu">
+      <div class="btn__menu"></div>
+    </label>
+
+    <!-- SIDEBAR -->
     <div class="sidebar">
       <img src="logo.png" alt="Logo" class="logo" />
 
@@ -70,6 +80,7 @@
           <button class="form__btn">OK</button>
         </form>
 
+        <!-- DEMO OF WORKOUT HTML  -->
         <!-- <li class="workout workout--running" data-id="1234567890">
           <h2 class="workout__title">Running on April 14</h2>
           <div class="workout__details">
@@ -118,7 +129,7 @@
           </div>
         </li> -->
       </ul>
-
+      <!-- 
       <p class="copyright">
         &copy; Copyright by
         <a
@@ -128,9 +139,15 @@
           >Jonas Schmedtmann</a
         >. Use for learning or your portfolio. Don't use to teach. Don't claim
         as your own.
-      </p>
+      </p>-->
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
     </div>
-
-    <div id="map"></div>
   </body>
 </html>
